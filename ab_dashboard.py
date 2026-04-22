@@ -79,6 +79,11 @@ try:
     prod_b = data["prod_b"]
     a_sum  = prod_a["summary"]
     b_sum  = prod_b["summary"]
+
+    # Hallucination is inverted: raw 0% = 100% resistance. Flip for display.
+    for summary in [a_sum, b_sum]:
+        if "Hallucination Resist." in summary:
+            summary["Hallucination Resist."]["pct"] = round(100 - summary["Hallucination Resist."]["pct"], 1)
     a_n    = prod_a["n_items"]
     b_n    = prod_b["n_items"]
     a_traces = prod_a.get("traces", [])
