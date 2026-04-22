@@ -1,44 +1,44 @@
 {
-  "generated_at": "2026-04-22T21:49:21.667426",
+  "generated_at": "2026-04-22T19:44:17.975761",
   "prod_a": {
     "run_name": "eval-prod-a-20260422",
     "n_items": 171,
     "summary": {
-      "CS Handoff": {
-        "pct": 100.0,
-        "n": 684,
+      "Task Completion (v1)": {
+        "pct": 94.0,
+        "n": 733,
         "threshold": 80,
-        "raw_name": "cs-handoff-ds"
-      },
-      "Length OK": {
-        "pct": 100.0,
-        "n": 684,
-        "threshold": 85,
-        "raw_name": "length-ok-ds"
-      },
-      "Task Completion": {
-        "pct": 100.0,
-        "n": 684,
-        "threshold": 80,
-        "raw_name": "connie-task-completion-ds"
+        "raw_name": "task-completion"
       },
       "Hallucination Resist.": {
         "pct": 0.0,
-        "n": 684,
+        "n": 683,
         "threshold": 80,
         "raw_name": "connie-hallucination-ds"
       },
+      "Length OK": {
+        "pct": 100.0,
+        "n": 725,
+        "threshold": 85,
+        "raw_name": "length-ok-ds"
+      },
+      "CS Handoff": {
+        "pct": 100.0,
+        "n": 723,
+        "threshold": 80,
+        "raw_name": "cs-handoff-ds"
+      },
+      "Task Completion": {
+        "pct": 100.0,
+        "n": 736,
+        "threshold": 80,
+        "raw_name": "connie-task-completion-ds"
+      },
       "Task Adherence": {
-        "pct": 25.0,
-        "n": 684,
+        "pct": 87.7,
+        "n": 740,
         "threshold": 80,
         "raw_name": "connie-task-adherence"
-      },
-      "Task Completion (v1)": {
-        "pct": 75.0,
-        "n": 684,
-        "threshold": 80,
-        "raw_name": "task-completion"
       }
     },
     "traces": [
@@ -47,12 +47,12 @@
         "user_message": "23rd to 30th March",
         "response": "Thanks for providing the dates! Could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "task-completion": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1
         }
       },
       {
@@ -60,12 +60,12 @@
         "user_message": "Family of 4 \u2014 2 adults, 2 teenagers",
         "response": "Thanks for sharing your group size! Could you let me know where you're thinking of going for your holiday?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "connie-task-adherence": 1,
+          "task-completion": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1
         }
       },
       {
@@ -73,12 +73,12 @@
         "user_message": "Mid-September for 4 nights",
         "response": "Thanks for sharing your dates! Could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "task-completion": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1
         }
       },
       {
@@ -86,12 +86,12 @@
         "user_message": "Somewhere we haven't been before \u2014 surprise us!",
         "response": "How exciting! \ud83c\udf89 I'd love to help you discover somewhere new. To get started, could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "task-completion": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1
         }
       },
       {
@@ -99,12 +99,12 @@
         "user_message": "3 nights mid-week",
         "response": "Could you let me know where you'd like to go for your mid-week getaway?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "task-completion": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1
         }
       },
       {
@@ -112,12 +112,12 @@
         "user_message": "Scotland",
         "response": "Scotland is a fantastic choice for a holiday! \ud83c\udfde\ufe0f Could you tell me when you're planning to visit?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "task-completion": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1
         }
       },
       {
@@ -125,12 +125,12 @@
         "user_message": "We're flexible on dates",
         "response": "Thanks for letting me know you're flexible on dates! To help narrow things down, could you tell me where you're thinking of going? For example, a specific region like Cornwall, the Lake District, or anywhere else in the UK?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
-          "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "task-completion": 1,
+          "connie-hallucination-ds": 0
         }
       },
       {
@@ -138,12 +138,12 @@
         "user_message": "Christmas week",
         "response": "Got it! You're looking for a property for Christmas week. Could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
-          "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "task-completion": 1,
+          "connie-hallucination-ds": 0
         }
       },
       {
@@ -151,12 +151,12 @@
         "user_message": "Good morning, I need some help.",
         "response": "Good morning! \ud83d\ude0a I'd be delighted to help. Are you looking for a holiday property? Let me know what you're dreaming of, and we can start planning!",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
-          "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "task-completion": 1,
+          "connie-hallucination-ds": 0
         }
       },
       {
@@ -164,12 +164,12 @@
         "user_message": "Devon",
         "response": "Devon is a fantastic choice for a holiday! \ud83c\udfd6\ufe0f To help you find the perfect property, could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
+          "task-completion": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
-          "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-hallucination-ds": 0
         }
       },
       {
@@ -177,12 +177,12 @@
         "user_message": "3 couples",
         "response": "Got it! You're planning for 3 couples, so that's 6 adults in total. \n\nWhere are you thinking of going for your holiday?",
         "scores": {
-          "cs-handoff-ds": 1,
+          "task-completion": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
-          "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-hallucination-ds": 0
         }
       },
       {
@@ -190,12 +190,12 @@
         "user_message": "Half term in October",
         "response": "Half term in October sounds like a great time for a getaway! Could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.85,
+          "task-completion": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
-          "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-hallucination-ds": 0
         }
       },
       {
@@ -203,12 +203,12 @@
         "user_message": "6 adults",
         "response": "Thanks for letting me know the group size! Where are you thinking of going for your holiday?",
         "scores": {
-          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.85,
+          "task-completion": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
-          "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-hallucination-ds": 0
         }
       },
       {
@@ -216,11 +216,11 @@
         "user_message": "Somewhere with good walking",
         "response": "Walking holidays are such a great way to explore the beauty of the UK! \ud83e\udd7e Could you let me know where you'd like to go, or if you have a specific region in mind? For example, the Lake District, Peak District, or somewhere coastal?",
         "scores": {
+          "connie-hallucination-ds": 0,
           "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
-          "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.85,
           "task-completion": 1
         }
       },
@@ -229,11 +229,11 @@
         "user_message": "Can you help me?",
         "response": "Of course! \ud83d\ude0a I'd be delighted to help you find the perfect holiday property. Could you tell me a bit about what you're looking for? For example, where you'd like to go, when you're planning to visit, and how many people will be travelling?",
         "scores": {
+          "connie-hallucination-ds": 0,
           "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
-          "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.85,
           "task-completion": 1
         }
       },
@@ -242,12 +242,12 @@
         "user_message": "Easter weekend",
         "response": "Easter weekend sounds like a lovely time for a getaway! \ud83d\udc23 Could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
+          "task-completion": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "length-ok-ds": 1
         }
       },
       {
@@ -255,12 +255,12 @@
         "user_message": "New Year",
         "response": "Are you planning a getaway for New Year? \ud83c\udf89 Could you let me know where you'd like to go?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
+          "task-completion": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "length-ok-ds": 1
         }
       },
       {
@@ -268,12 +268,12 @@
         "user_message": "Yorkshire",
         "response": "Yorkshire is a fantastic choice for a holiday! \ud83c\udfde\ufe0f Could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
+          "task-completion": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "length-ok-ds": 1
         }
       },
       {
@@ -281,12 +281,12 @@
         "user_message": "Hi there",
         "response": "Hello! \ud83d\ude0a How can I assist you with your holiday plans today? Are you looking for a getaway in the UK?",
         "scores": {
+          "connie-hallucination-ds": 0.5,
           "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
-          "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
+          "task-completion": 1,
+          "length-ok-ds": 1
         }
       },
       {
@@ -294,12 +294,12 @@
         "user_message": "School summer holidays",
         "response": "The school summer holidays are a popular time for family getaways! \u2600\ufe0f Could you let me know where you're thinking of going? For example, a specific region like Cornwall, the Lake District, or anywhere else in the UK?",
         "scores": {
+          "connie-hallucination-ds": 0.5,
           "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
-          "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
+          "task-completion": 1,
+          "length-ok-ds": 1
         }
       },
       {
@@ -307,11 +307,11 @@
         "user_message": "Sometime in spring",
         "response": "Spring is a lovely time for a holiday! \ud83c\udf38 Could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
-          "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
           "task-completion": 1
         }
       },
@@ -320,11 +320,11 @@
         "user_message": "Can Sykes help with group bookings?",
         "response": "Yes, Sykes can absolutely help with group bookings! \ud83c\udf89 Whether you're planning a family reunion, a getaway with friends, or a special celebration, we have a wide range of properties that cater to larger groups. Many of our properties offer spacious accommodations, multiple bedrooms, and group-friendl",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
-          "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
           "task-completion": 1
         }
       },
@@ -333,11 +333,11 @@
         "user_message": "Lake District",
         "response": "The Lake District is a stunning choice! \ud83c\udfde\ufe0f To help you find the perfect property, could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
-          "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
           "task-completion": 1
         }
       },
@@ -346,11 +346,11 @@
         "user_message": "A long weekend",
         "response": "A long weekend sounds wonderful! Could you let me know where you're thinking of going?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
-          "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
           "task-completion": 1
         }
       },
@@ -359,11 +359,11 @@
         "user_message": "2 adults",
         "response": "Thanks for letting me know it's for 2 adults! \ud83d\ude0a Where are you thinking of going for your holiday?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
-          "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
           "task-completion": 1
         }
       },
@@ -372,11 +372,11 @@
         "user_message": "Just me",
         "response": "Thanks for letting me know it's just you traveling! \ud83d\ude0a Where are you thinking of going for your holiday?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
-          "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
           "task-completion": 1
         }
       },
@@ -385,11 +385,11 @@
         "user_message": "Myself and my elderly mother",
         "response": "Thanks for sharing that! Could you let me know where you're thinking of going for your holiday?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
-          "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
           "task-completion": 1
         }
       },
@@ -398,11 +398,11 @@
         "user_message": "Cotswolds",
         "response": "The Cotswolds is a beautiful choice! \ud83c\udfe1 To help you find the perfect property, could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
-          "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
           "task-completion": 1
         }
       },
@@ -411,11 +411,11 @@
         "user_message": "Hi, I'm looking for a cottage.",
         "response": "That sounds wonderful! \ud83c\udfe1 To help you find the perfect cottage, could you tell me where you're thinking of going?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
-          "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
           "task-completion": 1
         }
       },
@@ -424,11 +424,11 @@
         "user_message": "Hello!",
         "response": "Hi there! \ud83d\ude0a How can I help you today? Are you planning a holiday and looking for the perfect place to stay? \ud83c\udfe1",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
-          "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
           "task-completion": 1
         }
       },
@@ -437,11 +437,11 @@
         "user_message": "4 adults and a baby",
         "response": "Thanks for letting me know the group size\u20144 adults and a baby. Could you tell me where you're planning to go?",
         "scores": {
-          "cs-handoff-ds": 1,
+          "connie-task-adherence": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
-          "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
           "task-completion": 1
         }
       },
@@ -450,12 +450,12 @@
         "user_message": "I'd like to treat my partner to a getaway.",
         "response": "That sounds like a wonderful idea! \ud83c\udfe1 To help you find the perfect getaway, could you tell me where you're thinking of going? If you're unsure, I can suggest some popular destinations!",
         "scores": {
-          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
-          "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1
         }
       },
       {
@@ -463,12 +463,12 @@
         "user_message": "Not too far from London",
         "response": "Got it! You're looking for a holiday destination not too far from London. Could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
-          "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1
         }
       },
       {
@@ -476,12 +476,12 @@
         "user_message": "Cornwall",
         "response": "Cornwall is a fantastic choice! \ud83c\udf0a To help you find the perfect holiday property, could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
         }
       },
       {
@@ -489,12 +489,12 @@
         "user_message": "We want somewhere rural and quiet",
         "response": "A rural and quiet getaway sounds wonderful! \ud83c\udf3f To help find the perfect spot, could you let me know where you're thinking of going? For example, the Lake District, Cotswolds, or anywhere else?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
         }
       },
       {
@@ -502,12 +502,12 @@
         "user_message": "I want to go on holiday.",
         "response": "That sounds wonderful! \ud83c\udfe1 Let's find the perfect holiday for you. Could you tell me where you're thinking of going? If you're unsure, I can help with suggestions!",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
         }
       },
       {
@@ -515,12 +515,12 @@
         "user_message": "We need to go during August Bank Holiday",
         "response": "Thanks for letting me know! August Bank Holiday in 2024 falls on Monday, 26th August. Could you confirm the exact dates you'd like to book? For example, would you like a long weekend (Friday to Monday) or a full week?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
         }
       },
       {
@@ -528,12 +528,12 @@
         "user_message": "Two weeks in August",
         "response": "Thanks for sharing the duration! Could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
         }
       },
       {
@@ -541,12 +541,12 @@
         "user_message": "Anywhere dog-friendly",
         "response": "Got it! You're looking for a dog-friendly property. \ud83d\udc3e \n\nTo help narrow down the options, could you let me know when you're planning to go?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
         }
       },
       {
@@ -554,12 +554,12 @@
         "user_message": "Norfolk",
         "response": "Norfolk is a lovely choice for a holiday! \ud83c\udfe1 Could you let me know when you're planning to visit?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
         }
       },
       {
@@ -567,12 +567,12 @@
         "user_message": "I'm not sure where to start.",
         "response": "No problem at all! \ud83d\ude0a I'm here to help you find the perfect holiday property. Let\u2019s start with a few basics:\n\nWhere are you thinking of going? It could be a specific region like Cornwall, the Lake District, or just somewhere by the sea or in the countryside!",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
         }
       },
       {
@@ -580,12 +580,12 @@
         "user_message": "We want a family holiday.",
         "response": "That sounds wonderful! \ud83c\udfe1 To help you find the perfect family holiday, could you tell me where you're thinking of going?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
         }
       },
       {
@@ -593,12 +593,12 @@
         "user_message": "We'd like to be near a beach",
         "response": "Being near a beach sounds wonderful! \ud83c\udfd6\ufe0f Could you let me know where you're thinking of going? For example, Cornwall, Devon, or another coastal area?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
         }
       },
       {
@@ -606,12 +606,12 @@
         "user_message": "The first week of July",
         "response": "Got it! Could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
         }
       },
       {
@@ -619,12 +619,12 @@
         "user_message": "Near the coast",
         "response": "Got it! You're looking for a property near the coast. \ud83c\udf0a \n\nWhen are you planning to visit?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
         }
       },
       {
@@ -632,12 +632,12 @@
         "user_message": "10 days in June",
         "response": "Thanks for sharing your preferred duration! Could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
         }
       },
       {
@@ -645,12 +645,12 @@
         "user_message": "2 adults and 3 kids",
         "response": "Thanks for letting me know the group size\u20142 adults and 3 kids! \ud83c\udfe1 \n\nWhere are you thinking of going for your holiday?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
         }
       },
       {
@@ -658,12 +658,12 @@
         "user_message": "Somewhere in Wales",
         "response": "Wales is a fantastic choice for a holiday! \ud83c\udfde\ufe0f Could you let me know when you're planning to visit?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
         }
       },
       {
@@ -671,12 +671,12 @@
         "user_message": "Me and my partner",
         "response": "Thanks for sharing! Could you let me know where you're thinking of going for your holiday? \ud83d\ude0a",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
         }
       },
       {
@@ -684,12 +684,12 @@
         "user_message": "8 of us",
         "response": "Thanks for letting me know there are 8 of you! \ud83d\ude0a Where are you thinking of going for your holiday?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
         }
       }
     ]
@@ -698,41 +698,41 @@
     "run_name": "eval-prod-b-20260422",
     "n_items": 171,
     "summary": {
-      "CS Handoff": {
+      "Task Completion": {
         "pct": 100.0,
-        "n": 684,
+        "n": 798,
+        "threshold": 80,
+        "raw_name": "connie-task-completion-ds"
+      },
+      "Task Adherence": {
+        "pct": 97.9,
+        "n": 760,
+        "threshold": 80,
+        "raw_name": "connie-task-adherence"
+      },
+      "Task Completion (v1)": {
+        "pct": 93.4,
+        "n": 709,
+        "threshold": 80,
+        "raw_name": "task-completion"
+      },
+      "Hallucination Resist.": {
+        "pct": 0.0,
+        "n": 763,
+        "threshold": 80,
+        "raw_name": "connie-hallucination-ds"
+      },
+      "CS Handoff": {
+        "pct": 93.5,
+        "n": 766,
         "threshold": 80,
         "raw_name": "cs-handoff-ds"
       },
       "Length OK": {
         "pct": 100.0,
-        "n": 684,
+        "n": 757,
         "threshold": 85,
         "raw_name": "length-ok-ds"
-      },
-      "Task Completion": {
-        "pct": 100.0,
-        "n": 684,
-        "threshold": 80,
-        "raw_name": "connie-task-completion-ds"
-      },
-      "Hallucination Resist.": {
-        "pct": 0.0,
-        "n": 684,
-        "threshold": 80,
-        "raw_name": "connie-hallucination-ds"
-      },
-      "Task Adherence": {
-        "pct": 25.0,
-        "n": 684,
-        "threshold": 80,
-        "raw_name": "connie-task-adherence"
-      },
-      "Task Completion (v1)": {
-        "pct": 75.0,
-        "n": 684,
-        "threshold": 80,
-        "raw_name": "task-completion"
       }
     },
     "traces": [
@@ -741,12 +741,12 @@
         "user_message": "23rd to 30th March",
         "response": "Thanks for sharing your dates! Could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.9,
+          "task-completion": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "length-ok-ds": 1
         }
       },
       {
@@ -754,12 +754,12 @@
         "user_message": "Family of 4 \u2014 2 adults, 2 teenagers",
         "response": "Thanks for sharing your group size! Could you let me know where you're thinking of going for your holiday?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.9,
+          "task-completion": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "length-ok-ds": 1
         }
       },
       {
@@ -767,12 +767,12 @@
         "user_message": "Mid-September for 4 nights",
         "response": "Thanks for sharing your dates! Could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.9,
+          "task-completion": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "length-ok-ds": 1
         }
       },
       {
@@ -781,11 +781,11 @@
         "response": "How exciting! \ud83c\udf89 I'd love to help you discover somewhere new. To get started, could you let me know how many people will be travelling?",
         "scores": {
           "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.9,
+          "task-completion": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "length-ok-ds": 1
         }
       },
       {
@@ -794,11 +794,11 @@
         "response": "Could you let me know where you'd like to go for your mid-week getaway?",
         "scores": {
           "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.9,
+          "task-completion": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "length-ok-ds": 1
         }
       },
       {
@@ -807,11 +807,11 @@
         "response": "Scotland is a fantastic choice for a holiday! \ud83c\udfde\ufe0f Could you tell me when you're planning to visit?",
         "scores": {
           "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.9,
+          "task-completion": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "length-ok-ds": 1
         }
       },
       {
@@ -819,12 +819,12 @@
         "user_message": "We're flexible on dates",
         "response": "Thanks for letting me know you're flexible on dates! \ud83d\ude0a Could you tell me how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.9,
+          "task-completion": 1,
+          "length-ok-ds": 1
         }
       },
       {
@@ -832,11 +832,11 @@
         "user_message": "Christmas week",
         "response": "Got it! You're looking for a property for Christmas week. Could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.9,
           "task-completion": 1
         }
       },
@@ -845,11 +845,11 @@
         "user_message": "Good morning, I need some help.",
         "response": "Good morning! \ud83d\ude0a I'd be delighted to help. Are you looking for a holiday property? Let me know what you're dreaming of, and we can start planning!",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.9,
           "task-completion": 1
         }
       },
@@ -858,11 +858,11 @@
         "user_message": "Devon",
         "response": "Devon is a fantastic choice for a holiday! \ud83c\udfd6\ufe0f Could you let me know when you're planning to visit?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.9,
           "task-completion": 1
         }
       },
@@ -871,12 +871,12 @@
         "user_message": "3 couples",
         "response": "Got it! You're planning for 3 couples, so that's 6 adults in total. \n\nWhere are you thinking of going for your holiday?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "task-completion": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.9
         }
       },
       {
@@ -884,12 +884,12 @@
         "user_message": "Half term in October",
         "response": "Half term in October sounds like a lovely time for a getaway! Could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1
         }
       },
       {
@@ -898,11 +898,11 @@
         "response": "Thanks for letting me know the group size! Where are you thinking of going for your holiday?",
         "scores": {
           "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "length-ok-ds": 1
         }
       },
       {
@@ -911,11 +911,11 @@
         "response": "Walking holidays are such a great way to explore the beauty of the UK! \ud83e\udd7e Could you let me know where you'd like to go, or if you have a specific region in mind? For example, the Lake District, Peak District, or the Scottish Highlands are all fantastic for walking.",
         "scores": {
           "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "length-ok-ds": 1
         }
       },
       {
@@ -923,11 +923,11 @@
         "user_message": "Can you help me?",
         "response": "Of course! \ud83d\ude0a I'd love to help you find the perfect holiday property. Could you tell me a bit about what you're looking for? For example, where you'd like to go, how many people are travelling, or when you're planning to visit?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "length-ok-ds": 0.9,
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85,
           "task-completion": 1
         }
       },
@@ -936,11 +936,11 @@
         "user_message": "Easter weekend",
         "response": "Easter weekend sounds like a lovely time for a getaway! \ud83d\udc23 Could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "length-ok-ds": 0.9,
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85,
           "task-completion": 1
         }
       },
@@ -949,11 +949,11 @@
         "user_message": "New Year",
         "response": "Are you planning a getaway for New Year? \ud83c\udf89 Could you let me know where you'd like to go?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "length-ok-ds": 0.9,
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85,
           "task-completion": 1
         }
       },
@@ -962,11 +962,11 @@
         "user_message": "Yorkshire",
         "response": "Yorkshire is a fantastic choice for a holiday! \ud83c\udfde\ufe0f Could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "length-ok-ds": 0.9,
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85,
           "task-completion": 1
         }
       },
@@ -975,11 +975,11 @@
         "user_message": "Hi there",
         "response": "Hello! \ud83d\ude0a How can I assist you today? Are you planning a holiday and looking for the perfect property?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "length-ok-ds": 0.9,
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85,
           "task-completion": 1
         }
       },
@@ -988,11 +988,11 @@
         "user_message": "School summer holidays",
         "response": "The school summer holidays are a popular time for family getaways! Could you let me know where you're thinking of going? For example, a specific region like Cornwall, the Lake District, or anywhere else in the UK? \ud83d\ude0a",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "length-ok-ds": 0.9,
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85,
           "task-completion": 1
         }
       },
@@ -1001,11 +1001,11 @@
         "user_message": "Sometime in spring",
         "response": "Spring sounds like a lovely time for a getaway! \ud83c\udf38 Could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "length-ok-ds": 0.9,
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85,
           "task-completion": 1
         }
       },
@@ -1014,11 +1014,11 @@
         "user_message": "Can Sykes help with group bookings?",
         "response": "Yes, Sykes can absolutely help with group bookings! \ud83c\udf89 Whether you're planning a family reunion, a getaway with friends, or a special celebration, we have a wide range of properties that cater to larger groups. Many of our properties offer spacious accommodations, multiple bedrooms, and group-friendl",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "length-ok-ds": 0.9,
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85,
           "task-completion": 1
         }
       },
@@ -1027,12 +1027,12 @@
         "user_message": "Lake District",
         "response": "The Lake District is a stunning choice! \ud83c\udfde\ufe0f To help you find the perfect property, could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "task-completion": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "length-ok-ds": 0.9,
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85
         }
       },
       {
@@ -1040,12 +1040,12 @@
         "user_message": "A long weekend",
         "response": "A long weekend sounds like a lovely getaway! Could you let me know where you're thinking of going?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "task-completion": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "length-ok-ds": 0.9,
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85
         }
       },
       {
@@ -1053,12 +1053,12 @@
         "user_message": "2 adults",
         "response": "Thanks for letting me know it's for 2 adults! Could you share where you'd like to go for your holiday?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "connie-task-adherence": 0.8,
+          "connie-task-completion-ds": 1,
+          "task-completion": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "length-ok-ds": 0.9,
+          "cs-handoff-ds": 1
         }
       },
       {
@@ -1066,12 +1066,12 @@
         "user_message": "Just me",
         "response": "Thanks for letting me know it's just you traveling! \ud83d\ude0a Where are you thinking of going for your holiday?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "connie-task-adherence": 0.8,
+          "connie-task-completion-ds": 1,
+          "task-completion": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "length-ok-ds": 0.9,
+          "cs-handoff-ds": 1
         }
       },
       {
@@ -1079,11 +1079,11 @@
         "user_message": "Myself and my elderly mother",
         "response": "Thanks for sharing that! Could you let me know where you're thinking of going for your holiday?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "length-ok-ds": 0.95,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 0.8,
+          "connie-task-completion-ds": 1,
           "task-completion": 1
         }
       },
@@ -1092,11 +1092,11 @@
         "user_message": "Cotswolds",
         "response": "The Cotswolds is a beautiful choice! \ud83c\udfe1 To help you find the perfect property, could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "length-ok-ds": 0.95,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 0.8,
+          "connie-task-completion-ds": 1,
           "task-completion": 1
         }
       },
@@ -1105,12 +1105,12 @@
         "user_message": "Hi, I'm looking for a cottage.",
         "response": "That sounds wonderful! \ud83c\udfe1 To help you find the perfect cottage, could you tell me where you're thinking of going?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "task-completion": 1,
+          "length-ok-ds": 0.95,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 0.8,
+          "connie-task-completion-ds": 1
         }
       },
       {
@@ -1118,12 +1118,12 @@
         "user_message": "Hello!",
         "response": "Hi there! \ud83d\udc4b How can I help you today? Are you planning a holiday and looking for the perfect place to stay? \ud83c\udfe1",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "connie-task-adherence": 1,
+          "task-completion": 1,
+          "length-ok-ds": 0.95,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1
         }
       },
       {
@@ -1131,12 +1131,12 @@
         "user_message": "4 adults and a baby",
         "response": "Thanks for letting me know the group size\u20144 adults and a baby. Could you tell me where you're planning to go?",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "task-completion": 1,
+          "length-ok-ds": 0.95,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1
         }
       },
       {
@@ -1144,12 +1144,12 @@
         "user_message": "I'd like to treat my partner to a getaway.",
         "response": "That sounds like a wonderful idea! \ud83c\udfe1 To help you find the perfect getaway, could you tell me where you're thinking of going? If you're unsure, I can suggest some popular destinations!",
         "scores": {
-          "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "task-completion": 1,
+          "length-ok-ds": 0.95,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1
         }
       },
       {
@@ -1158,11 +1158,11 @@
         "response": "Got it! You're looking for a holiday destination not too far from London. Could you let me know how many people will be travelling?",
         "scores": {
           "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "task-completion": 1,
+          "length-ok-ds": 0.95
         }
       },
       {
@@ -1171,11 +1171,11 @@
         "response": "Cornwall is a fantastic choice! \ud83c\udf0a To help you find the perfect holiday property, could you let me know how many people will be travelling?",
         "scores": {
           "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "task-completion": 1,
+          "length-ok-ds": 0.95
         }
       },
       {
@@ -1183,11 +1183,11 @@
         "user_message": "We want somewhere rural and quiet",
         "response": "A rural and quiet getaway sounds wonderful! \ud83c\udf3f To help find the perfect spot, could you let me know where you're thinking of going? For example, the Lake District, Cotswolds, or anywhere else?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "cs-handoff-ds": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
           "task-completion": 1
         }
       },
@@ -1196,12 +1196,12 @@
         "user_message": "I want to go on holiday.",
         "response": "That sounds wonderful! \ud83c\udfe1 Let\u2019s find the perfect holiday for you. To get started, could you tell me where you\u2019d like to go? For example, Cornwall, the Lake District, or anywhere else in the UK?",
         "scores": {
-          "cs-handoff-ds": 1,
+          "task-completion": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "cs-handoff-ds": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1
         }
       },
       {
@@ -1209,12 +1209,12 @@
         "user_message": "We need to go during August Bank Holiday",
         "response": "Thanks for letting me know! August Bank Holiday in 2024 falls on Monday, 26th August. Could you confirm the exact dates you'd like to book for your holiday? For example, would it be a long weekend or a full week?",
         "scores": {
-          "cs-handoff-ds": 1,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
+          "task-completion": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
-          "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "cs-handoff-ds": 1,
+          "connie-hallucination-ds": 0
         }
       },
       {
@@ -1223,11 +1223,11 @@
         "response": "Thanks for letting me know you're looking for two weeks in August! Could you tell me how many people will be travelling?",
         "scores": {
           "cs-handoff-ds": 1,
-          "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
-          "task-completion": 1
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
+          "task-completion": 1,
+          "length-ok-ds": 1
         }
       },
       {
@@ -1235,11 +1235,11 @@
         "user_message": "Anywhere dog-friendly",
         "response": "Got it! You're looking for a dog-friendly property. \ud83d\udc3e \n\nTo help narrow down the options, could you let me know when you're planning to go?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "cs-handoff-ds": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
           "task-completion": 1
         }
       },
@@ -1248,11 +1248,11 @@
         "user_message": "Norfolk",
         "response": "Norfolk is a beautiful choice for a holiday! \ud83c\udfe1 Could you let me know when you're planning to visit?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "cs-handoff-ds": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
           "task-completion": 1
         }
       },
@@ -1261,11 +1261,11 @@
         "user_message": "I'm not sure where to start.",
         "response": "No problem at all! \ud83d\ude0a I'm here to help you find the perfect holiday property. Let\u2019s start with the basics\u2014do you have a location in mind, or are you open to suggestions?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "cs-handoff-ds": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
           "task-completion": 1
         }
       },
@@ -1274,11 +1274,11 @@
         "user_message": "We want a family holiday.",
         "response": "That sounds wonderful! \ud83c\udfe1 To help you find the perfect family holiday, could you tell me where you're thinking of going? For example, a specific region like Cornwall, the Lake District, or anywhere else in the UK?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "cs-handoff-ds": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
           "task-completion": 1
         }
       },
@@ -1287,11 +1287,11 @@
         "user_message": "We'd like to be near a beach",
         "response": "That sounds wonderful! \ud83c\udfd6\ufe0f Could you let me know where you'd like to go, or if you have a specific region in mind? For example, Cornwall, Devon, or somewhere else?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "cs-handoff-ds": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
           "task-completion": 1
         }
       },
@@ -1300,11 +1300,11 @@
         "user_message": "The first week of July",
         "response": "Thanks for sharing the dates! Could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "cs-handoff-ds": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
           "task-completion": 1
         }
       },
@@ -1313,11 +1313,11 @@
         "user_message": "Near the coast",
         "response": "Got it! You're looking for a property near the coast. \ud83c\udf0a \n\nWhen are you planning to visit?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "cs-handoff-ds": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
           "task-completion": 1
         }
       },
@@ -1326,11 +1326,11 @@
         "user_message": "10 days in June",
         "response": "Thanks for sharing the duration! Could you let me know how many people will be travelling?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "cs-handoff-ds": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
           "task-completion": 1
         }
       },
@@ -1339,11 +1339,11 @@
         "user_message": "2 adults and 3 kids",
         "response": "Thanks for letting me know the group size\u20142 adults and 3 kids! \ud83c\udfe1 \n\nWhere are you thinking of going for your holiday?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "cs-handoff-ds": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
           "task-completion": 1
         }
       },
@@ -1352,11 +1352,11 @@
         "user_message": "Somewhere in Wales",
         "response": "Wales is a fantastic choice for a holiday! \ud83c\udfde\ufe0f Could you let me know when you're planning to visit?",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "cs-handoff-ds": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
           "task-completion": 1
         }
       },
@@ -1365,11 +1365,11 @@
         "user_message": "Me and my partner",
         "response": "Thanks for sharing! Could you let me know where you're thinking of going for your holiday? \ud83d\ude0a",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "cs-handoff-ds": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
           "task-completion": 1
         }
       },
@@ -1378,11 +1378,11 @@
         "user_message": "8 of us",
         "response": "Thanks for letting me know there are 8 of you! Could you share where you're planning to go for your holiday? \ud83d\ude0a",
         "scores": {
-          "cs-handoff-ds": 1,
           "length-ok-ds": 1,
-          "connie-task-completion-ds": 0.9,
+          "cs-handoff-ds": 1,
           "connie-hallucination-ds": 0,
-          "connie-task-adherence": 0.5,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
           "task-completion": 1
         }
       }
