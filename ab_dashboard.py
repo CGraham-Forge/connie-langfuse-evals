@@ -21,29 +21,32 @@ PROD_A_RUN    = "eval-prod-a-20260421"
 PROD_B_RUN    = "eval-prod-b-20260421"
 
 THRESHOLDS = {
-    "connie-task-completion": 80,
-    "connie-task-adherence":  80,
-    "cs-handoff":             80,
-    "cs_handoff_correct":     80,
-    "brand_tone":             70,
-    "length-ok":              85,
-    "length_ok":              85,
-    "connie-hallucination":   80,
-    "task-completion":        80,
-    "safety_pass":            100,
+    "connie-task-completion-ds": 80,
+    "connie-task-adherence":     80,
+    "cs-handoff-ds":             80,
+    "brand-tone-ds":             70,
+    "brand_tone-ds":             70,
+    "length-ok-ds":              85,
+    "connie-hallucination-ds":   80,
+    "task-completion":           80,
 }
 
 DISPLAY_NAMES = {
-    "connie-task-completion": "Task Completion",
-    "connie-task-adherence":  "Task Adherence",
-    "cs-handoff":             "CS Handoff",
-    "cs_handoff_correct":     "CS Handoff",
-    "brand_tone":             "Brand Tone",
-    "length-ok":              "Length OK",
-    "length_ok":              "Length OK",
-    "connie-hallucination":   "Hallucination Resistance",
-    "task-completion":        "Task Completion",
-    "safety_pass":            "Safety / Adversarial",
+    "connie-task-completion-ds": "Task Completion",
+    "connie-task-adherence":     "Task Adherence",
+    "cs-handoff-ds":             "CS Handoff",
+    "brand-tone-ds":             "Brand Tone",
+    "brand_tone-ds":             "Brand Tone",
+    "length-ok-ds":              "Length OK",
+    "connie-hallucination-ds":   "Hallucination Resistance",
+    "task-completion":           "Task Completion (legacy)",
+}
+
+# Only show dataset-run evaluators on A/B dashboard
+DATASET_EVALUATORS = {
+    "connie-task-completion-ds", "connie-task-adherence",
+    "cs-handoff-ds", "brand-tone-ds", "brand_tone-ds",
+    "length-ok-ds", "connie-hallucination-ds", "task-completion",
 }
 
 IMPROVEMENT_THRESHOLD = 5.0  # pp
@@ -187,6 +190,9 @@ def summarise_scores(scores_by_name):
     seen   = set()
     result = {}
     for raw_name, values in scores_by_name.items():
+        # only show dataset-run evaluators
+        if raw_name not in DATASET_EVALUATORS:
+            continue
         display = DISPLAY_NAMES.get(raw_name, raw_name)
         if display in seen or not values:
             continue
