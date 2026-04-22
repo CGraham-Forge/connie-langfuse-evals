@@ -66,11 +66,19 @@ def fetch_run_scores(run_name):
     page = 1
     while True:
         resp = requests.get(
-            f"{LANGFUSE_HOST}/api/public/dataset-run-items",
+            f"{LANGFUSE_HOST}/api/public/datasets/{DATASET_NAME}/runs/{run_name}/items",
             auth=auth,
-            params={"datasetRunName": run_name, "datasetId": DATASET_ID, "page": page, "limit": 50},
+            params={"page": page, "limit": 50},
             verify=False
         )
+        if resp.status_code != 200:
+            # fallback: try query param style
+            resp = requests.get(
+                f"{LANGFUSE_HOST}/api/public/dataset-run-items",
+                auth=auth,
+                params={"runName": run_name, "datasetId": DATASET_ID, "page": page, "limit": 50},
+                verify=False
+            )
         if resp.status_code != 200:
             break
         data = resp.json().get("data", [])
@@ -183,7 +191,7 @@ def summarise_scores(scores_by_name):
         if display in seen or not values:
             continue
         seen.add(display)
-        passing = sum(1 for v in values if v >= 0.5)
+        passing = sum(1 for v in values if v > 0.5)
         result[display] = {
             "pct":      round(passing / len(values) * 100, 1),
             "n":        len(values),
