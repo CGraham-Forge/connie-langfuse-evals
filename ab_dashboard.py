@@ -17,8 +17,15 @@ from collections import defaultdict
 LANGFUSE_HOST = "https://langfuse.forgehg.cloud"
 DATASET_ID    = "cmn60zfsi00inzb078j4a21ak"
 DATASET_NAME  = "sykes-connie-functional-evals-v2"
-PROD_A_RUN    = "eval-prod-a-20260421"
-PROD_B_RUN    = "eval-prod-b-20260421"
+# Run names — auto-generates from today's date, override via Streamlit secrets
+_today     = datetime.now().strftime("%Y%m%d")
+try:
+    import streamlit as _st
+    PROD_A_RUN = _st.secrets.get("PROD_A_RUN", f"eval-prod-a-{_today}")
+    PROD_B_RUN = _st.secrets.get("PROD_B_RUN", f"eval-prod-b-{_today}")
+except Exception:
+    PROD_A_RUN = os.getenv("PROD_A_RUN", f"eval-prod-a-{_today}")
+    PROD_B_RUN = os.getenv("PROD_B_RUN", f"eval-prod-b-{_today}")
 
 THRESHOLDS = {
     "connie-task-completion-ds": 80,
