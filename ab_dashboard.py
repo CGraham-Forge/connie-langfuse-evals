@@ -201,14 +201,19 @@ with tab2:
     show_fails = st.checkbox("Failing cases only", value=True)
     traces     = a_traces if run_choice == "prod-a" else b_traces
 
+    filter_metric = st.selectbox("Filter by evaluator", [
+        "connie-task-completion-ds", "cs-handoff-ds", "brand-tone-ds",
+        "length-ok-ds", "connie-hallucination-ds", "connie-task-adherence", "task-completion"
+    ])
+
     if not traces:
         st.info("No trace data available.")
     else:
         shown = 0
         for t in traces:
             scores  = t.get("scores", {})
-            tc      = scores.get("connie-task-completion-ds", scores.get("task-completion"))
-            passing = tc is not None and tc > 0.5
+            val     = scores.get(filter_metric)
+            passing = val is not None and val > 0.5
             if show_fails and passing:
                 continue
             border = "#27AE60" if passing else "#E74C3C"
