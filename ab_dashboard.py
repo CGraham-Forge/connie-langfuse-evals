@@ -76,19 +76,11 @@ def fetch_run_scores(run_name):
     page = 1
     while True:
         resp = requests.get(
-            f"{LANGFUSE_HOST}/api/public/datasets/{DATASET_NAME}/runs/{run_name}/items",
+            f"{LANGFUSE_HOST}/api/public/dataset-run-items",
             auth=auth,
-            params={"page": page, "limit": 50},
+            params={"runName": run_name, "datasetId": DATASET_ID, "page": page, "limit": 50},
             verify=False
         )
-        if resp.status_code != 200:
-            # fallback: try query param style
-            resp = requests.get(
-                f"{LANGFUSE_HOST}/api/public/dataset-run-items",
-                auth=auth,
-                params={"runName": run_name, "datasetId": DATASET_ID, "page": page, "limit": 50},
-                verify=False
-            )
         if resp.status_code != 200:
             break
         data = resp.json().get("data", [])
