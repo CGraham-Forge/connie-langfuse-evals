@@ -1,0 +1,1391 @@
+{
+  "generated_at": "2026-04-22T19:44:17.975761",
+  "prod_a": {
+    "run_name": "eval-prod-a-20260422",
+    "n_items": 171,
+    "summary": {
+      "Task Completion (v1)": {
+        "pct": 94.0,
+        "n": 733,
+        "threshold": 80,
+        "raw_name": "task-completion"
+      },
+      "Hallucination Resist.": {
+        "pct": 0.0,
+        "n": 683,
+        "threshold": 80,
+        "raw_name": "connie-hallucination-ds"
+      },
+      "Length OK": {
+        "pct": 100.0,
+        "n": 725,
+        "threshold": 85,
+        "raw_name": "length-ok-ds"
+      },
+      "CS Handoff": {
+        "pct": 100.0,
+        "n": 723,
+        "threshold": 80,
+        "raw_name": "cs-handoff-ds"
+      },
+      "Task Completion": {
+        "pct": 100.0,
+        "n": 736,
+        "threshold": 80,
+        "raw_name": "connie-task-completion-ds"
+      },
+      "Task Adherence": {
+        "pct": 87.7,
+        "n": 740,
+        "threshold": 80,
+        "raw_name": "connie-task-adherence"
+      }
+    },
+    "traces": [
+      {
+        "trace_id": "8c987b946f288205aa31c9718c79db1f",
+        "user_message": "23rd to 30th March",
+        "response": "Thanks for providing the dates! Could you let me know how many people will be travelling?",
+        "scores": {
+          "task-completion": 1,
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1
+        }
+      },
+      {
+        "trace_id": "96ccd5345cd20f9ee2d643e7c061e85c",
+        "user_message": "Family of 4 \u2014 2 adults, 2 teenagers",
+        "response": "Thanks for sharing your group size! Could you let me know where you're thinking of going for your holiday?",
+        "scores": {
+          "connie-task-adherence": 1,
+          "task-completion": 1,
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1
+        }
+      },
+      {
+        "trace_id": "cf2cbfb7868834af3c93e03e79b819c6",
+        "user_message": "Mid-September for 4 nights",
+        "response": "Thanks for sharing your dates! Could you let me know how many people will be travelling?",
+        "scores": {
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "task-completion": 1,
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1
+        }
+      },
+      {
+        "trace_id": "71998e41f57322d048a7d9ba11bd8685",
+        "user_message": "Somewhere we haven't been before \u2014 surprise us!",
+        "response": "How exciting! \ud83c\udf89 I'd love to help you discover somewhere new. To get started, could you let me know how many people will be travelling?",
+        "scores": {
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "task-completion": 1,
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1
+        }
+      },
+      {
+        "trace_id": "71d15020a24fc51b6a69c28339f0d64c",
+        "user_message": "3 nights mid-week",
+        "response": "Could you let me know where you'd like to go for your mid-week getaway?",
+        "scores": {
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "task-completion": 1,
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1
+        }
+      },
+      {
+        "trace_id": "f6fd1b0111007b840bef7ddc1f9445b7",
+        "user_message": "Scotland",
+        "response": "Scotland is a fantastic choice for a holiday! \ud83c\udfde\ufe0f Could you tell me when you're planning to visit?",
+        "scores": {
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "task-completion": 1,
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1
+        }
+      },
+      {
+        "trace_id": "70671fc42c1f29f962df548d2e600067",
+        "user_message": "We're flexible on dates",
+        "response": "Thanks for letting me know you're flexible on dates! To help narrow things down, could you tell me where you're thinking of going? For example, a specific region like Cornwall, the Lake District, or anywhere else in the UK?",
+        "scores": {
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "task-completion": 1,
+          "connie-hallucination-ds": 0
+        }
+      },
+      {
+        "trace_id": "1654362e01a8dfb42204eb031af39a1a",
+        "user_message": "Christmas week",
+        "response": "Got it! You're looking for a property for Christmas week. Could you let me know how many people will be travelling?",
+        "scores": {
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "task-completion": 1,
+          "connie-hallucination-ds": 0
+        }
+      },
+      {
+        "trace_id": "803f265d4f3cbb40cdcc063f59d2d5fd",
+        "user_message": "Good morning, I need some help.",
+        "response": "Good morning! \ud83d\ude0a I'd be delighted to help. Are you looking for a holiday property? Let me know what you're dreaming of, and we can start planning!",
+        "scores": {
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "task-completion": 1,
+          "connie-hallucination-ds": 0
+        }
+      },
+      {
+        "trace_id": "95f87d9950f392052526f82877077077",
+        "user_message": "Devon",
+        "response": "Devon is a fantastic choice for a holiday! \ud83c\udfd6\ufe0f To help you find the perfect property, could you let me know how many people will be travelling?",
+        "scores": {
+          "task-completion": 1,
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-hallucination-ds": 0
+        }
+      },
+      {
+        "trace_id": "95bf78f6f561c6f7bdb8802085918b8a",
+        "user_message": "3 couples",
+        "response": "Got it! You're planning for 3 couples, so that's 6 adults in total. \n\nWhere are you thinking of going for your holiday?",
+        "scores": {
+          "task-completion": 1,
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-hallucination-ds": 0
+        }
+      },
+      {
+        "trace_id": "f5faee2ba173b6b250e0caa03b3aa65f",
+        "user_message": "Half term in October",
+        "response": "Half term in October sounds like a great time for a getaway! Could you let me know how many people will be travelling?",
+        "scores": {
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.85,
+          "task-completion": 1,
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-hallucination-ds": 0
+        }
+      },
+      {
+        "trace_id": "63cb5b6ba419052b6a331dd54b2c5c10",
+        "user_message": "6 adults",
+        "response": "Thanks for letting me know the group size! Where are you thinking of going for your holiday?",
+        "scores": {
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.85,
+          "task-completion": 1,
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-hallucination-ds": 0
+        }
+      },
+      {
+        "trace_id": "2f268b5e2304ed99e79e9f4ff8dd803e",
+        "user_message": "Somewhere with good walking",
+        "response": "Walking holidays are such a great way to explore the beauty of the UK! \ud83e\udd7e Could you let me know where you'd like to go, or if you have a specific region in mind? For example, the Lake District, Peak District, or somewhere coastal?",
+        "scores": {
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "length-ok-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.85,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "96e625938861f4bdd378ed7bbf95ee18",
+        "user_message": "Can you help me?",
+        "response": "Of course! \ud83d\ude0a I'd be delighted to help you find the perfect holiday property. Could you tell me a bit about what you're looking for? For example, where you'd like to go, when you're planning to visit, and how many people will be travelling?",
+        "scores": {
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "length-ok-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.85,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "ab07628fb277e32caddf0644fc785a4d",
+        "user_message": "Easter weekend",
+        "response": "Easter weekend sounds like a lovely time for a getaway! \ud83d\udc23 Could you let me know how many people will be travelling?",
+        "scores": {
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
+          "task-completion": 1,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "length-ok-ds": 1
+        }
+      },
+      {
+        "trace_id": "f7d7ef9810b2faf882b63812dc2230d1",
+        "user_message": "New Year",
+        "response": "Are you planning a getaway for New Year? \ud83c\udf89 Could you let me know where you'd like to go?",
+        "scores": {
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
+          "task-completion": 1,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "length-ok-ds": 1
+        }
+      },
+      {
+        "trace_id": "a5deeceac394345398f43eaa45363459",
+        "user_message": "Yorkshire",
+        "response": "Yorkshire is a fantastic choice for a holiday! \ud83c\udfde\ufe0f Could you let me know how many people will be travelling?",
+        "scores": {
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
+          "task-completion": 1,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "length-ok-ds": 1
+        }
+      },
+      {
+        "trace_id": "d35db082d0fb75b54ebd03fac0e02a3c",
+        "user_message": "Hi there",
+        "response": "Hello! \ud83d\ude0a How can I assist you with your holiday plans today? Are you looking for a getaway in the UK?",
+        "scores": {
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
+          "task-completion": 1,
+          "length-ok-ds": 1
+        }
+      },
+      {
+        "trace_id": "9358906dbb59297dead47c00be975f90",
+        "user_message": "School summer holidays",
+        "response": "The school summer holidays are a popular time for family getaways! \u2600\ufe0f Could you let me know where you're thinking of going? For example, a specific region like Cornwall, the Lake District, or anywhere else in the UK?",
+        "scores": {
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
+          "task-completion": 1,
+          "length-ok-ds": 1
+        }
+      },
+      {
+        "trace_id": "bb51113fddff4d99c39a325c1b335486",
+        "user_message": "Sometime in spring",
+        "response": "Spring is a lovely time for a holiday! \ud83c\udf38 Could you let me know how many people will be travelling?",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "c484700b219bae61c86d595f77a142c6",
+        "user_message": "Can Sykes help with group bookings?",
+        "response": "Yes, Sykes can absolutely help with group bookings! \ud83c\udf89 Whether you're planning a family reunion, a getaway with friends, or a special celebration, we have a wide range of properties that cater to larger groups. Many of our properties offer spacious accommodations, multiple bedrooms, and group-friendl",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "dfcf61047f3691f4f6f3ba62ae0de6a3",
+        "user_message": "Lake District",
+        "response": "The Lake District is a stunning choice! \ud83c\udfde\ufe0f To help you find the perfect property, could you let me know how many people will be travelling?",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "03ddb20430bb2a920e421740f40b31aa",
+        "user_message": "A long weekend",
+        "response": "A long weekend sounds wonderful! Could you let me know where you're thinking of going?",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "bb2d4119a0fb91d767db4190299f6fa9",
+        "user_message": "2 adults",
+        "response": "Thanks for letting me know it's for 2 adults! \ud83d\ude0a Where are you thinking of going for your holiday?",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "37548d7ffc916da481a9edf2a52a58a1",
+        "user_message": "Just me",
+        "response": "Thanks for letting me know it's just you traveling! \ud83d\ude0a Where are you thinking of going for your holiday?",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "d8358746089b2abbd071290107692304",
+        "user_message": "Myself and my elderly mother",
+        "response": "Thanks for sharing that! Could you let me know where you're thinking of going for your holiday?",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "dd435930f77307628eae233f969e4c75",
+        "user_message": "Cotswolds",
+        "response": "The Cotswolds is a beautiful choice! \ud83c\udfe1 To help you find the perfect property, could you let me know how many people will be travelling?",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "ee9baacf0c0bcdd1bad2e7beb95fc948",
+        "user_message": "Hi, I'm looking for a cottage.",
+        "response": "That sounds wonderful! \ud83c\udfe1 To help you find the perfect cottage, could you tell me where you're thinking of going?",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "f0427ac5e58025829975cfa58637642a",
+        "user_message": "Hello!",
+        "response": "Hi there! \ud83d\ude0a How can I help you today? Are you planning a holiday and looking for the perfect place to stay? \ud83c\udfe1",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.75,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "0687c17a332dca24229be5097e47593a",
+        "user_message": "4 adults and a baby",
+        "response": "Thanks for letting me know the group size\u20144 adults and a baby. Could you tell me where you're planning to go?",
+        "scores": {
+          "connie-task-adherence": 1,
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "94816404f0e014722b183e3c27e72a97",
+        "user_message": "I'd like to treat my partner to a getaway.",
+        "response": "That sounds like a wonderful idea! \ud83c\udfe1 To help you find the perfect getaway, could you tell me where you're thinking of going? If you're unsure, I can suggest some popular destinations!",
+        "scores": {
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1,
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1
+        }
+      },
+      {
+        "trace_id": "825a49ccc82b044d657aaf6785c859c5",
+        "user_message": "Not too far from London",
+        "response": "Got it! You're looking for a holiday destination not too far from London. Could you let me know how many people will be travelling?",
+        "scores": {
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1,
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0.5,
+          "cs-handoff-ds": 1
+        }
+      },
+      {
+        "trace_id": "ea6373150ddfff60adf668a92f30cc91",
+        "user_message": "Cornwall",
+        "response": "Cornwall is a fantastic choice! \ud83c\udf0a To help you find the perfect holiday property, could you let me know how many people will be travelling?",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
+        }
+      },
+      {
+        "trace_id": "8881b414cf2709245594182955065789",
+        "user_message": "We want somewhere rural and quiet",
+        "response": "A rural and quiet getaway sounds wonderful! \ud83c\udf3f To help find the perfect spot, could you let me know where you're thinking of going? For example, the Lake District, Cotswolds, or anywhere else?",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
+        }
+      },
+      {
+        "trace_id": "804a3f450851be14e9984ab4d58c4593",
+        "user_message": "I want to go on holiday.",
+        "response": "That sounds wonderful! \ud83c\udfe1 Let's find the perfect holiday for you. Could you tell me where you're thinking of going? If you're unsure, I can help with suggestions!",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
+        }
+      },
+      {
+        "trace_id": "350dd2ecd351e49accce1ad06d7d58d1",
+        "user_message": "We need to go during August Bank Holiday",
+        "response": "Thanks for letting me know! August Bank Holiday in 2024 falls on Monday, 26th August. Could you confirm the exact dates you'd like to book? For example, would you like a long weekend (Friday to Monday) or a full week?",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
+        }
+      },
+      {
+        "trace_id": "f319a729c6b2719d6eb9cd35c200132e",
+        "user_message": "Two weeks in August",
+        "response": "Thanks for sharing the duration! Could you let me know how many people will be travelling?",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
+        }
+      },
+      {
+        "trace_id": "0061b2cf4e89220086a4380bf9b65282",
+        "user_message": "Anywhere dog-friendly",
+        "response": "Got it! You're looking for a dog-friendly property. \ud83d\udc3e \n\nTo help narrow down the options, could you let me know when you're planning to go?",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
+        }
+      },
+      {
+        "trace_id": "4066a2a703ed445bcedae44debd7d9dc",
+        "user_message": "Norfolk",
+        "response": "Norfolk is a lovely choice for a holiday! \ud83c\udfe1 Could you let me know when you're planning to visit?",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
+        }
+      },
+      {
+        "trace_id": "3d262dc703ed503152da0e4cc6fd2cff",
+        "user_message": "I'm not sure where to start.",
+        "response": "No problem at all! \ud83d\ude0a I'm here to help you find the perfect holiday property. Let\u2019s start with a few basics:\n\nWhere are you thinking of going? It could be a specific region like Cornwall, the Lake District, or just somewhere by the sea or in the countryside!",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
+        }
+      },
+      {
+        "trace_id": "40911852ec7e4b7f762dbe44a30cdaaf",
+        "user_message": "We want a family holiday.",
+        "response": "That sounds wonderful! \ud83c\udfe1 To help you find the perfect family holiday, could you tell me where you're thinking of going?",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
+        }
+      },
+      {
+        "trace_id": "c872a63d4a741c1b9e6877362ae10c42",
+        "user_message": "We'd like to be near a beach",
+        "response": "Being near a beach sounds wonderful! \ud83c\udfd6\ufe0f Could you let me know where you're thinking of going? For example, Cornwall, Devon, or another coastal area?",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
+        }
+      },
+      {
+        "trace_id": "25fed99593b7faed44c001aaa97c8f9a",
+        "user_message": "The first week of July",
+        "response": "Got it! Could you let me know how many people will be travelling?",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
+        }
+      },
+      {
+        "trace_id": "a5c6ce601121673c705e8f1bf5ccdf08",
+        "user_message": "Near the coast",
+        "response": "Got it! You're looking for a property near the coast. \ud83c\udf0a \n\nWhen are you planning to visit?",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
+        }
+      },
+      {
+        "trace_id": "c55982ad39e0f7012f1934fe01287a38",
+        "user_message": "10 days in June",
+        "response": "Thanks for sharing your preferred duration! Could you let me know how many people will be travelling?",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
+        }
+      },
+      {
+        "trace_id": "a553737696053fec7fb09009cd6c3b91",
+        "user_message": "2 adults and 3 kids",
+        "response": "Thanks for letting me know the group size\u20142 adults and 3 kids! \ud83c\udfe1 \n\nWhere are you thinking of going for your holiday?",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
+        }
+      },
+      {
+        "trace_id": "2f0a4ead9c8f3d665194780a94cc92b9",
+        "user_message": "Somewhere in Wales",
+        "response": "Wales is a fantastic choice for a holiday! \ud83c\udfde\ufe0f Could you let me know when you're planning to visit?",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
+        }
+      },
+      {
+        "trace_id": "f212bbb5fec64674dc8df217792ac92f",
+        "user_message": "Me and my partner",
+        "response": "Thanks for sharing! Could you let me know where you're thinking of going for your holiday? \ud83d\ude0a",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
+        }
+      },
+      {
+        "trace_id": "701854f97874d8267a899b93feb56ad2",
+        "user_message": "8 of us",
+        "response": "Thanks for letting me know there are 8 of you! \ud83d\ude0a Where are you thinking of going for your holiday?",
+        "scores": {
+          "length-ok-ds": 1,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-task-adherence": 1
+        }
+      }
+    ]
+  },
+  "prod_b": {
+    "run_name": "eval-prod-b-20260422",
+    "n_items": 171,
+    "summary": {
+      "Task Completion": {
+        "pct": 100.0,
+        "n": 798,
+        "threshold": 80,
+        "raw_name": "connie-task-completion-ds"
+      },
+      "Task Adherence": {
+        "pct": 97.9,
+        "n": 760,
+        "threshold": 80,
+        "raw_name": "connie-task-adherence"
+      },
+      "Task Completion (v1)": {
+        "pct": 93.4,
+        "n": 709,
+        "threshold": 80,
+        "raw_name": "task-completion"
+      },
+      "Hallucination Resist.": {
+        "pct": 0.0,
+        "n": 763,
+        "threshold": 80,
+        "raw_name": "connie-hallucination-ds"
+      },
+      "CS Handoff": {
+        "pct": 93.5,
+        "n": 766,
+        "threshold": 80,
+        "raw_name": "cs-handoff-ds"
+      },
+      "Length OK": {
+        "pct": 100.0,
+        "n": 757,
+        "threshold": 85,
+        "raw_name": "length-ok-ds"
+      }
+    },
+    "traces": [
+      {
+        "trace_id": "19d14258539cabbb0a49c0e634d1626a",
+        "user_message": "23rd to 30th March",
+        "response": "Thanks for sharing your dates! Could you let me know how many people will be travelling?",
+        "scores": {
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.9,
+          "task-completion": 1,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "length-ok-ds": 1
+        }
+      },
+      {
+        "trace_id": "9773bc326fbfff8a98bc7f77c1da92ca",
+        "user_message": "Family of 4 \u2014 2 adults, 2 teenagers",
+        "response": "Thanks for sharing your group size! Could you let me know where you're thinking of going for your holiday?",
+        "scores": {
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.9,
+          "task-completion": 1,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "length-ok-ds": 1
+        }
+      },
+      {
+        "trace_id": "7ce9085562ddb0c8b68a0efad3c631dd",
+        "user_message": "Mid-September for 4 nights",
+        "response": "Thanks for sharing your dates! Could you let me know how many people will be travelling?",
+        "scores": {
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.9,
+          "task-completion": 1,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "length-ok-ds": 1
+        }
+      },
+      {
+        "trace_id": "155a6792a7257de60b60bd1b6a35ef11",
+        "user_message": "Somewhere we haven't been before \u2014 surprise us!",
+        "response": "How exciting! \ud83c\udf89 I'd love to help you discover somewhere new. To get started, could you let me know how many people will be travelling?",
+        "scores": {
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.9,
+          "task-completion": 1,
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 1
+        }
+      },
+      {
+        "trace_id": "f84326ff8fb53309f7ea47bee71dcdec",
+        "user_message": "3 nights mid-week",
+        "response": "Could you let me know where you'd like to go for your mid-week getaway?",
+        "scores": {
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.9,
+          "task-completion": 1,
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 1
+        }
+      },
+      {
+        "trace_id": "5629dc729bfbc95cba2f2d6784ccdb43",
+        "user_message": "Scotland",
+        "response": "Scotland is a fantastic choice for a holiday! \ud83c\udfde\ufe0f Could you tell me when you're planning to visit?",
+        "scores": {
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.9,
+          "task-completion": 1,
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 1
+        }
+      },
+      {
+        "trace_id": "f4974c11c27f39d12ccc93d1797910f0",
+        "user_message": "We're flexible on dates",
+        "response": "Thanks for letting me know you're flexible on dates! \ud83d\ude0a Could you tell me how many people will be travelling?",
+        "scores": {
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.9,
+          "task-completion": 1,
+          "length-ok-ds": 1
+        }
+      },
+      {
+        "trace_id": "91014a2bf9590dc4e2ca755b6b06fc13",
+        "user_message": "Christmas week",
+        "response": "Got it! You're looking for a property for Christmas week. Could you let me know how many people will be travelling?",
+        "scores": {
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.9,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "4634617e7d785a3aeafa01e8b3cf09a8",
+        "user_message": "Good morning, I need some help.",
+        "response": "Good morning! \ud83d\ude0a I'd be delighted to help. Are you looking for a holiday property? Let me know what you're dreaming of, and we can start planning!",
+        "scores": {
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.9,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "b483231ec48ddf001e9547bf91afb656",
+        "user_message": "Devon",
+        "response": "Devon is a fantastic choice for a holiday! \ud83c\udfd6\ufe0f Could you let me know when you're planning to visit?",
+        "scores": {
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.9,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "76db5e37d6f4616120423307b673099b",
+        "user_message": "3 couples",
+        "response": "Got it! You're planning for 3 couples, so that's 6 adults in total. \n\nWhere are you thinking of going for your holiday?",
+        "scores": {
+          "task-completion": 1,
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 0.9
+        }
+      },
+      {
+        "trace_id": "3481768b57ebe01216b3a6e95103b7da",
+        "user_message": "Half term in October",
+        "response": "Half term in October sounds like a lovely time for a getaway! Could you let me know how many people will be travelling?",
+        "scores": {
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1
+        }
+      },
+      {
+        "trace_id": "1a6de7f70ffff55aa93b6c7140456274",
+        "user_message": "6 adults",
+        "response": "Thanks for letting me know the group size! Where are you thinking of going for your holiday?",
+        "scores": {
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 1
+        }
+      },
+      {
+        "trace_id": "63d755da94570d6b2e279b269946559e",
+        "user_message": "Somewhere with good walking",
+        "response": "Walking holidays are such a great way to explore the beauty of the UK! \ud83e\udd7e Could you let me know where you'd like to go, or if you have a specific region in mind? For example, the Lake District, Peak District, or the Scottish Highlands are all fantastic for walking.",
+        "scores": {
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1,
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 1
+        }
+      },
+      {
+        "trace_id": "9246eda580c1d21d67b4ade24eca09e1",
+        "user_message": "Can you help me?",
+        "response": "Of course! \ud83d\ude0a I'd love to help you find the perfect holiday property. Could you tell me a bit about what you're looking for? For example, where you'd like to go, how many people are travelling, or when you're planning to visit?",
+        "scores": {
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 0.9,
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "797d50e3dd5cd0b46badf5c0e1abf004",
+        "user_message": "Easter weekend",
+        "response": "Easter weekend sounds like a lovely time for a getaway! \ud83d\udc23 Could you let me know how many people will be travelling?",
+        "scores": {
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 0.9,
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "66a5412e984fe894e104e98034a2a89d",
+        "user_message": "New Year",
+        "response": "Are you planning a getaway for New Year? \ud83c\udf89 Could you let me know where you'd like to go?",
+        "scores": {
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 0.9,
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "b83f77c49e2ecfde1d0532f8b167431b",
+        "user_message": "Yorkshire",
+        "response": "Yorkshire is a fantastic choice for a holiday! \ud83c\udfde\ufe0f Could you let me know how many people will be travelling?",
+        "scores": {
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 0.9,
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "93947cb571245a468455f74818c86837",
+        "user_message": "Hi there",
+        "response": "Hello! \ud83d\ude0a How can I assist you today? Are you planning a holiday and looking for the perfect property?",
+        "scores": {
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 0.9,
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "e1ef0944a9c5bb87ade41bed53387c25",
+        "user_message": "School summer holidays",
+        "response": "The school summer holidays are a popular time for family getaways! Could you let me know where you're thinking of going? For example, a specific region like Cornwall, the Lake District, or anywhere else in the UK? \ud83d\ude0a",
+        "scores": {
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 0.9,
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "8faeb2f95169cff3f758ff7bc0d433e2",
+        "user_message": "Sometime in spring",
+        "response": "Spring sounds like a lovely time for a getaway! \ud83c\udf38 Could you let me know how many people will be travelling?",
+        "scores": {
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 0.9,
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "3f467c92958e43cbcb9d3de9e331cece",
+        "user_message": "Can Sykes help with group bookings?",
+        "response": "Yes, Sykes can absolutely help with group bookings! \ud83c\udf89 Whether you're planning a family reunion, a getaway with friends, or a special celebration, we have a wide range of properties that cater to larger groups. Many of our properties offer spacious accommodations, multiple bedrooms, and group-friendl",
+        "scores": {
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 0.9,
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "105d6a696a7cbbc418e96cfba1400c3d",
+        "user_message": "Lake District",
+        "response": "The Lake District is a stunning choice! \ud83c\udfde\ufe0f To help you find the perfect property, could you let me know how many people will be travelling?",
+        "scores": {
+          "task-completion": 1,
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 0.9,
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85
+        }
+      },
+      {
+        "trace_id": "df04a2b35b571682baf854d6f9228cd2",
+        "user_message": "A long weekend",
+        "response": "A long weekend sounds like a lovely getaway! Could you let me know where you're thinking of going?",
+        "scores": {
+          "task-completion": 1,
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 0.9,
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 1,
+          "connie-task-completion-ds": 0.85
+        }
+      },
+      {
+        "trace_id": "653aa883222251217b1622ad76d9751c",
+        "user_message": "2 adults",
+        "response": "Thanks for letting me know it's for 2 adults! Could you share where you'd like to go for your holiday?",
+        "scores": {
+          "connie-task-adherence": 0.8,
+          "connie-task-completion-ds": 1,
+          "task-completion": 1,
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 0.9,
+          "cs-handoff-ds": 1
+        }
+      },
+      {
+        "trace_id": "99f6226839642494c7baa2098734b9dc",
+        "user_message": "Just me",
+        "response": "Thanks for letting me know it's just you traveling! \ud83d\ude0a Where are you thinking of going for your holiday?",
+        "scores": {
+          "connie-task-adherence": 0.8,
+          "connie-task-completion-ds": 1,
+          "task-completion": 1,
+          "connie-hallucination-ds": 0,
+          "length-ok-ds": 0.9,
+          "cs-handoff-ds": 1
+        }
+      },
+      {
+        "trace_id": "3658bb2cac2d9a7abd52e7fc93635c31",
+        "user_message": "Myself and my elderly mother",
+        "response": "Thanks for sharing that! Could you let me know where you're thinking of going for your holiday?",
+        "scores": {
+          "length-ok-ds": 0.95,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 0.8,
+          "connie-task-completion-ds": 1,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "dddbd4408125a623bfa5eafe61e945a6",
+        "user_message": "Cotswolds",
+        "response": "The Cotswolds is a beautiful choice! \ud83c\udfe1 To help you find the perfect property, could you let me know how many people will be travelling?",
+        "scores": {
+          "length-ok-ds": 0.95,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 0.8,
+          "connie-task-completion-ds": 1,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "9e21646f9dd4213303fa4d9a6ce9c797",
+        "user_message": "Hi, I'm looking for a cottage.",
+        "response": "That sounds wonderful! \ud83c\udfe1 To help you find the perfect cottage, could you tell me where you're thinking of going?",
+        "scores": {
+          "task-completion": 1,
+          "length-ok-ds": 0.95,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "connie-task-adherence": 0.8,
+          "connie-task-completion-ds": 1
+        }
+      },
+      {
+        "trace_id": "b8838d7f9c4758a490c647a66a3a269c",
+        "user_message": "Hello!",
+        "response": "Hi there! \ud83d\udc4b How can I help you today? Are you planning a holiday and looking for the perfect place to stay? \ud83c\udfe1",
+        "scores": {
+          "connie-task-adherence": 1,
+          "task-completion": 1,
+          "length-ok-ds": 0.95,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1,
+          "connie-task-completion-ds": 1
+        }
+      },
+      {
+        "trace_id": "d75677307104f1e5b710c4c78004f7b9",
+        "user_message": "4 adults and a baby",
+        "response": "Thanks for letting me know the group size\u20144 adults and a baby. Could you tell me where you're planning to go?",
+        "scores": {
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "task-completion": 1,
+          "length-ok-ds": 0.95,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1
+        }
+      },
+      {
+        "trace_id": "66b7a7c4fa89091b740a5b9a10b1e110",
+        "user_message": "I'd like to treat my partner to a getaway.",
+        "response": "That sounds like a wonderful idea! \ud83c\udfe1 To help you find the perfect getaway, could you tell me where you're thinking of going? If you're unsure, I can suggest some popular destinations!",
+        "scores": {
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "task-completion": 1,
+          "length-ok-ds": 0.95,
+          "connie-hallucination-ds": 0,
+          "cs-handoff-ds": 1
+        }
+      },
+      {
+        "trace_id": "0c9cd21d0be120af9f02464e1fffe82e",
+        "user_message": "Not too far from London",
+        "response": "Got it! You're looking for a holiday destination not too far from London. Could you let me know how many people will be travelling?",
+        "scores": {
+          "cs-handoff-ds": 1,
+          "connie-hallucination-ds": 0,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "task-completion": 1,
+          "length-ok-ds": 0.95
+        }
+      },
+      {
+        "trace_id": "4b346fbb42c520f334949792f373bc29",
+        "user_message": "Cornwall",
+        "response": "Cornwall is a fantastic choice! \ud83c\udf0a To help you find the perfect holiday property, could you let me know how many people will be travelling?",
+        "scores": {
+          "cs-handoff-ds": 1,
+          "connie-hallucination-ds": 0,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "task-completion": 1,
+          "length-ok-ds": 0.95
+        }
+      },
+      {
+        "trace_id": "aa139645edd87f1c8ebfd076dceb601a",
+        "user_message": "We want somewhere rural and quiet",
+        "response": "A rural and quiet getaway sounds wonderful! \ud83c\udf3f To help find the perfect spot, could you let me know where you're thinking of going? For example, the Lake District, Cotswolds, or anywhere else?",
+        "scores": {
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-hallucination-ds": 0,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "0a8fbc19d72414984d532f4b056f43bf",
+        "user_message": "I want to go on holiday.",
+        "response": "That sounds wonderful! \ud83c\udfe1 Let\u2019s find the perfect holiday for you. To get started, could you tell me where you\u2019d like to go? For example, Cornwall, the Lake District, or anywhere else in the UK?",
+        "scores": {
+          "task-completion": 1,
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-hallucination-ds": 0,
+          "connie-task-completion-ds": 1,
+          "connie-task-adherence": 1
+        }
+      },
+      {
+        "trace_id": "66f8decdb253f56bb46af84cf197621d",
+        "user_message": "We need to go during August Bank Holiday",
+        "response": "Thanks for letting me know! August Bank Holiday in 2024 falls on Monday, 26th August. Could you confirm the exact dates you'd like to book for your holiday? For example, would it be a long weekend or a full week?",
+        "scores": {
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
+          "task-completion": 1,
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-hallucination-ds": 0
+        }
+      },
+      {
+        "trace_id": "690cdb44bc5bf54538730d83fdd4245c",
+        "user_message": "Two weeks in August",
+        "response": "Thanks for letting me know you're looking for two weeks in August! Could you tell me how many people will be travelling?",
+        "scores": {
+          "cs-handoff-ds": 1,
+          "connie-hallucination-ds": 0,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
+          "task-completion": 1,
+          "length-ok-ds": 1
+        }
+      },
+      {
+        "trace_id": "8a6fb86c50b72a1fb6f4f3536e102642",
+        "user_message": "Anywhere dog-friendly",
+        "response": "Got it! You're looking for a dog-friendly property. \ud83d\udc3e \n\nTo help narrow down the options, could you let me know when you're planning to go?",
+        "scores": {
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-hallucination-ds": 0,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "4e35bc19a9fa0b0411b0e82a0ec0d297",
+        "user_message": "Norfolk",
+        "response": "Norfolk is a beautiful choice for a holiday! \ud83c\udfe1 Could you let me know when you're planning to visit?",
+        "scores": {
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-hallucination-ds": 0,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "634481fb1d7155626c9e6baa0ae1f472",
+        "user_message": "I'm not sure where to start.",
+        "response": "No problem at all! \ud83d\ude0a I'm here to help you find the perfect holiday property. Let\u2019s start with the basics\u2014do you have a location in mind, or are you open to suggestions?",
+        "scores": {
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-hallucination-ds": 0,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "e820389a4dd6799a50a05187fc5511e6",
+        "user_message": "We want a family holiday.",
+        "response": "That sounds wonderful! \ud83c\udfe1 To help you find the perfect family holiday, could you tell me where you're thinking of going? For example, a specific region like Cornwall, the Lake District, or anywhere else in the UK?",
+        "scores": {
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-hallucination-ds": 0,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "349d4a086de000707791d0baebc253bf",
+        "user_message": "We'd like to be near a beach",
+        "response": "That sounds wonderful! \ud83c\udfd6\ufe0f Could you let me know where you'd like to go, or if you have a specific region in mind? For example, Cornwall, Devon, or somewhere else?",
+        "scores": {
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-hallucination-ds": 0,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "ac404f86fc498eeff22cd606e0d18a28",
+        "user_message": "The first week of July",
+        "response": "Thanks for sharing the dates! Could you let me know how many people will be travelling?",
+        "scores": {
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-hallucination-ds": 0,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "5ef5935367600a4bc08925a38563cd49",
+        "user_message": "Near the coast",
+        "response": "Got it! You're looking for a property near the coast. \ud83c\udf0a \n\nWhen are you planning to visit?",
+        "scores": {
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-hallucination-ds": 0,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "983154d33247cd1830cc0e9cc33aea51",
+        "user_message": "10 days in June",
+        "response": "Thanks for sharing the duration! Could you let me know how many people will be travelling?",
+        "scores": {
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-hallucination-ds": 0,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "b9a52f30f249134d92b2356c1e2d9f03",
+        "user_message": "2 adults and 3 kids",
+        "response": "Thanks for letting me know the group size\u20142 adults and 3 kids! \ud83c\udfe1 \n\nWhere are you thinking of going for your holiday?",
+        "scores": {
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-hallucination-ds": 0,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "9fc9928c98fe601c3b3ae7de3e2558d8",
+        "user_message": "Somewhere in Wales",
+        "response": "Wales is a fantastic choice for a holiday! \ud83c\udfde\ufe0f Could you let me know when you're planning to visit?",
+        "scores": {
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-hallucination-ds": 0,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "a1d789ab8a5af06888a0e5fc989494c5",
+        "user_message": "Me and my partner",
+        "response": "Thanks for sharing! Could you let me know where you're thinking of going for your holiday? \ud83d\ude0a",
+        "scores": {
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-hallucination-ds": 0,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
+          "task-completion": 1
+        }
+      },
+      {
+        "trace_id": "61f5a3efa18776cc6e3d0ab633d7e5ce",
+        "user_message": "8 of us",
+        "response": "Thanks for letting me know there are 8 of you! Could you share where you're planning to go for your holiday? \ud83d\ude0a",
+        "scores": {
+          "length-ok-ds": 1,
+          "cs-handoff-ds": 1,
+          "connie-hallucination-ds": 0,
+          "connie-task-adherence": 0.9,
+          "connie-task-completion-ds": 1,
+          "task-completion": 1
+        }
+      }
+    ]
+  }
+}
