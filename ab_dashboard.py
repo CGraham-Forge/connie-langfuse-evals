@@ -46,6 +46,9 @@ DATASET_EVALS = {
     "Task Completion (v1)":  80,
 }
 
+# Evaluators where LOW score = GOOD (hallucination: 0.0 = no hallucination = pass)
+INVERTED_EVALS = {"Hallucination Resist."}
+
 def colour(pct, thr):
     if pct >= thr:          return "#27AE60"
     elif pct >= thr * 0.85: return "#F39C12"
@@ -261,7 +264,7 @@ with tab3:
     | Task Completion | ≥ 80% | Critical |
     | Task Adherence | ≥ 80% | Critical |
     | CS Handoff | ≥ 80% | Critical |
-    | Hallucination Resistance | ≥ 80% | Critical |
+    | Hallucination Resistance | ≥ 80% | Critical — score of 0.0 = no hallucination = pass |
     | Brand Tone | ≥ 70% | Important |
     | Length OK | ≥ 85% | Informational |
 
