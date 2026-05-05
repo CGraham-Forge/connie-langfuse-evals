@@ -1,4 +1,4 @@
-Yes definitely worth adding — it shows you've thought through the full architecture not just the eval pipeline. Here's the updated README:
+
 
 ```markdown
 # Connie Langfuse Evals
