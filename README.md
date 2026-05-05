@@ -1,3 +1,5 @@
+Yes definitely worth adding — it shows you've thought through the full architecture not just the eval pipeline. Here's the updated README:
+
 ```markdown
 # Connie Langfuse Evals
 
@@ -25,7 +27,11 @@ Automated evaluation pipeline for Connie, the Sykes Cottages AI holiday booking 
 
 ## Evaluators
 
-Seven evaluators run automatically in Langfuse after each pipeline run. The `-ds` suffix denotes dataset run evaluators used for A/B comparison.
+There are two types of evaluator configured in Langfuse. Both use the same scoring logic but target different data sources.
+
+### Dataset run evaluators (-ds suffix)
+
+These score the synthetic test cases run through the eval pipeline. They are the basis for all A/B comparison and go-live decisions. Seven evaluators are active and score automatically after each pipeline run.
 
 | Evaluator | Threshold | Priority |
 |---|---|---|
@@ -35,6 +41,17 @@ Seven evaluators run automatically in Langfuse after each pipeline run. The `-ds
 | connie-hallucination-ds | ≥ 80% | Critical |
 | brand-tone-ds | ≥ 70% | Important |
 | length-ok-ds | ≥ 85% | Informational |
+
+### Live trace evaluators (no suffix)
+
+These are designed to score real customer conversations in production. They are currently set to **Inactive** and must remain so until launch.
+
+Before launch the following actions are required — **dev team support needed**:
+
+- Live trace evaluators must be scoped correctly so they only target real Connie customer conversations, not evaluator-generated traces or pipeline traces
+- Appropriate filters must be applied in Langfuse (environment = production, trace name = invoke_agent Connie Agent, excluding all Execute evaluator traces)
+- Without correct scoping, evaluators will pick up their own execution traces and create an infinite scoring loop — this has been identified and the evaluators have been deactivated pending proper configuration
+- Once scoped correctly, live trace evaluators will provide continuous production monitoring alongside the dataset eval pipeline
 
 ## Running the pipeline
 
@@ -79,7 +96,7 @@ Deployed at Streamlit Cloud. Reads from `scores.json` — no direct Langfuse con
 | Area | Owner |
 |---|---|
 | Eval pipeline and datasets | Calbert Graham, Data Science |
-| Langfuse instance | Dev team |
+| Langfuse instance and evaluator configuration | Dev team |
 | Prompt changes | PO + DS jointly |
 | Go-live decision | Joe Donoghue, Product |
 ```
